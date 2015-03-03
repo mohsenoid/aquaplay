@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB9-8B4A-11D0-8D11-00A0C91BC942}") = "IFacebook", "IFacebook.dll", "{AB52AEA9-47BE-4EC7-A9DB-82B4D111B07B}"
+	ProjectSection(MonoDevelopProperties) = preProject
+		name = IFacebook
+		Configurations = $0
+		$0.Configuration = $1
+		$1.name = Default
+		$1.OutputPath = .\
+		$1.ctype = ProjectConfiguration
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Default|Any CPU = Default|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AB52AEA9-47BE-4EC7-A9DB-82B4D111B07B}.Default|Any CPU.ActiveCfg = Default|Any CPU
+		{AB52AEA9-47BE-4EC7-A9DB-82B4D111B07B}.Default|Any CPU.Build.0 = Default|Any CPU
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = IFacebook.dll
+	EndGlobalSection
+EndGlobal
