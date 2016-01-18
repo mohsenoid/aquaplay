@@ -50,9 +50,9 @@ public class Tunnel : MonoBehaviour
 						//print (gObject.rigidbody.velocity.y);
 						//if (gObject.rigidbody.velocity.y < -1)
 						//float factor = cap.position.z - transform.position.z;
-						gObject.rigidbody.AddForce (Vector3.up * speed * Time.deltaTime);
+						gObject.GetComponent<Rigidbody>().AddForce (Vector3.up * speed * Time.deltaTime);
 						//}
-						gObject.rigidbody.AddTorque (Vector3.up * Time.deltaTime);
+						gObject.GetComponent<Rigidbody>().AddTorque (Vector3.up * Time.deltaTime);
 				}
 
 				if (bubbles.isPlaying)

@@ -475,7 +475,7 @@ void iosFeedRequest(int requestId,
 
   bool userWantsNative = [FbUnityInterface sharedInstance].dialogMode == NativeDialogModes::FAST_APP_SWITCH_SHARE_DIALOG;
   if(userWantsNative) {
-    FBShareDialogParams *dialogParams = [[[FBShareDialogParams alloc] init] autorelease];
+    FBShareDialogParams *dialogParams = [[FBShareDialogParams alloc] init] ;
     
     NSString *strLink = [NSString stringWithUTF8String:link];
     NSURL *linkUrl = [NSURL URLWithString:strLink];

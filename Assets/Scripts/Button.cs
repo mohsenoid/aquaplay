@@ -54,9 +54,9 @@ public class Button : MonoBehaviour
 	IEnumerator  buttonPressed(){
 		SendMessageUpwards ("startPresure", SendMessageOptions.DontRequireReceiver);
 		anim.SetBool(pressedState,true);
-		if(audio.isPlaying)
-			audio.Stop();
-		audio.PlayOneShot(bubbleSound);
+		if(GetComponent<AudioSource>().isPlaying)
+			GetComponent<AudioSource>().Stop();
+		GetComponent<AudioSource>().PlayOneShot(bubbleSound);
 		yield return new WaitForSeconds(delay);
 	}
 }
